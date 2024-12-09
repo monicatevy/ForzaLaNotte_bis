@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(13, 2fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.card {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: rotateY(0deg);
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.card.hidden {
+    background-color: #333;
+    color: transparent;
+    cursor: default;
+    transform: rotateY(180deg);
+    user-select: none;
+}
+
+.card.revealed {
+    background-color: #fff;
+    color: #000;
+}
+
+#name-form {
+    margin-top: 20px;
+}
+
+#instructions {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+#shuffle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#shuffle-btn:hover {
+    background-color: #0056b3;
+}

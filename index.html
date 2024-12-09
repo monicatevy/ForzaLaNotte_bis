@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Input</title>
+    <link rel="stylesheet" href="/memory_styles.css">
+</head>
+<body>
+    <h1>Name Input</h1>
+    <div id="instructions">
+        <p>Bienvenue dans le jeu de mémoire pour saisir votre nom !</p>
+        <p>Voici comment jouer :</p>
+        <ul>
+            <li>Trouvez les paires de lettres pour remplir votre nom.</li>
+            <li>Si vous faites une erreur, les cartes se cacheront de nouveau.</li>
+            <li>Cliquer sur envoyer réinitialisera votre entrée.</li>
+            <li>Vous pouvez cliquer sur le bouton "Remélanger les cartes" pour réorganiser
+                 les cartes pour avoir une lettre déjà saisie (par exemple pour alexa, on 
+                 cherchera les paires A-A, L-L, E-E, X-X, et puis remélanger pour avoir A-A de nouveau </li>
+        </ul>
+    </div>
+    <div id="game-board"></div>
+    <div id="controls">
+        <button id="shuffle-btn">Remélanger les cartes</button>
+    </div>
+    <form id="name-form">
+        <label for="name-input">Votre Nom :</label>
+        <input type="text" id="name-input" name="name" readonly>
+        <button type="submit">Envoyer</button>
+    </form>
+    <script src="/memory_script.js"></script>
+</body>
+</html>
